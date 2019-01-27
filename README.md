@@ -14,10 +14,7 @@ This Is Online Shopping Full Stack Web Based Project
 #### Important Point
 
 ```bash
-#### I Have Copied All Frontend Files In Webapp Folder
-```
-```bash
-
+I Have Already Copied All Angular6 Files In Webapp Folder Of This Project
 ```
 
 #### Heroku Live Project Url
