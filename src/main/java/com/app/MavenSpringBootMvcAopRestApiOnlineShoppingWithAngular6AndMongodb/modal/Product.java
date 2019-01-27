@@ -42,7 +42,7 @@ public class Product {
 	public Product() {
 		// TODO Auto-generated constructor stub
 	}
-
+	
 	/**
 	 * @param name
 	 * @param category
@@ -53,19 +53,6 @@ public class Product {
 	 * @param arrival
 	 * @param pictureUrl
 	 */
-//	public Product(String id, String name, String category, String brand, String size, Integer discount, int price, String arrival,
-//			String pictureUrl) {
-//		this.id = id;
-//		this.name = name;
-//		this.category = category;
-//		this.brand = brand;
-//		this.size = size;
-//		this.discount = discount;
-//		this.price = price;
-//		this.arrival = arrival;
-//		this.pictureUrl = pictureUrl;
-//	}
-	
 	public Product(String name, String category, String brand, String size, Integer discount, int price, String arrival,
 			String pictureUrl) {
 		this.name = name;

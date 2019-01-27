@@ -185,6 +185,8 @@ public class ProductRestController {
 		List<Product> buccellatiProductsList = productDAO.getAllProductsByBrandAndArrival("Buccellati", "OldArrival");
 		return new ResponseEntity<List<Product>>(buccellatiProductsList, HttpStatus.OK);
 	}
+
+	// for discount components
 	
 	@GetMapping("/fiftyPercent")
 	public ResponseEntity<List<Product>> fetchAllProductsHaveFiftyPercentDiscount(Integer discount, String arrival) throws Exception {
@@ -216,4 +218,5 @@ public class ProductRestController {
 		Product proud = productDAO.getProduct(id);
 		return new ResponseEntity<Product>(proud, HttpStatus.OK);
 	}
+
 }

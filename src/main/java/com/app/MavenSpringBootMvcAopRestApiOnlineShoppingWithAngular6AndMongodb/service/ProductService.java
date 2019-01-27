@@ -20,35 +20,6 @@ public class ProductService implements IProductDAO {
 	private MongoTemplate mongoTemplate;
 			
 	@Override
-	public boolean saveProduct(Product product) throws Exception {
-		// TODO Auto-generated method stub
-		return productRepository.save(product) != null;
-	}
-
-	@Override
-	public void updateProduct(Product product) throws Exception {
-		// TODO Auto-generated method stub
-		Product getProduct = mongoTemplate.findById(product.getId(), Product.class);
-		getProduct.setName(product.getName());
-		getProduct.setCategory(product.getCategory());
-		getProduct.setBrand(product.getBrand());
-		getProduct.setSize(product.getSize());
-		getProduct.setDiscount(product.getDiscount());
-		getProduct.setPrice(product.getPrice());
-		getProduct.setArrival(product.getArrival());
-		getProduct.setPictureUrl(product.getPictureUrl());
-		mongoTemplate.save(getProduct);
-	}
-
-	@Override
-	public void deleteProduct(String id) throws Exception {
-		// TODO Auto-generated method stub
-		Query query = new Query();
-		query.addCriteria(Criteria.where("id").is(id));
-		mongoTemplate.findAndRemove(query, Product.class);
-	}
-
-	@Override
 	public Product getProduct(String id) throws Exception {
 		// TODO Auto-generated method stub
 		Product getProduct = mongoTemplate.findById(id, Product.class);
@@ -61,12 +32,6 @@ public class ProductService implements IProductDAO {
 		return mongoTemplate.findAll(Product.class);
 	}
 
-	@Override
-	public void addProductThroughCommandLineRunner(Product product) throws Exception {
-		// TODO Auto-generated method stub
-		mongoTemplate.save(product);
-	}
-	
 	@Override
 	public List<Product> getAllProductsByArrival(String arrival) throws Exception {
 		// TODO Auto-generated method stub
