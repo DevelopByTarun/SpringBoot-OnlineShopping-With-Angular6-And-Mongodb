@@ -17,6 +17,10 @@ This Is Online Shopping Full Stack Web Based Project
 I Have Already Copied All Angular6 Files In Webapp Folder Of This Project
 ```
 
+```bash
+File Name DataDumpMongodb In Resources Folder Of This Project Contains All Products Entries. So U Import This File Into Ur Mongodb
+```
+
 #### Heroku Live Project Url
 
 ```bash
