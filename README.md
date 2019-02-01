@@ -23,9 +23,7 @@ File Name DataDumpMongodb In Resources Folder Of This Project Contains All Produ
 
 #### Heroku Live Project Url
 
-```bash
-https://tarunshoppy.herokuapp.com
-```
+[https://tarunshoppy.herokuapp.com](https://tarunshoppy.herokuapp.com)
 
 #### Frontend Technologies
 
